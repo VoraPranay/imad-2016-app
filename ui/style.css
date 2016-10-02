@@ -20,3 +20,31 @@ body {
     height: 200px;
 }
 
+body {
+    background-color:#bf8040;
+    color:#ffefaa;
+    font-family:Serif,Arial;
+}
+#Cakes{
+padding:10px;
+   background-color:#996633; 
+}
+table {
+background-color:#bf8040;
+border-collapse:collapse;
+border-color:#996633;
+}
+#Header{
+   background-color:#996633; 
+   padding:10px;
+}
+#ContactUs{
+   background-color:#996633;
+   padding:10px;
+   position:relative ;
+}
+#Copyright{
+font-family:Arial;
+   background-color:#996633; 
+   padding:1px;
+}
