@@ -1,6 +1,4 @@
 
-var numm = 1;
-var nnum = 1;
 
 // Counter code
  var button = document.getElementById('counter');
