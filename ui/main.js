@@ -22,6 +22,6 @@
      };
      
      // Make the request
-     request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
+     request.open('GET', 'http://VoraPranay.imad.hasura-app.io/counter', true);
      request.send(null);
  };
