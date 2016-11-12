@@ -1,168 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+        <p><button class="w3-btn w3-orange w3-xlarge">HOME<i class="w3-margin-left fa fa-home"></i></button></p>
+       <li><a href="PROFILE.html"><span>profile</span></a></li>
+       
+        <div class="center">
+            <img src="/Users/prashant/Desktop/ima.jpg" class="img-medium"/>
+        </div>
+        <br>
+        <div class="center text- bold">
+           <h1> Hi ! I am pranay vora
+        
+            welcome to my first web page</h1>
+            
+        </div>
+       
 
-// Counter code
- var button = document.getElementById('counter');
+        <title>TheCakeShop</title>
+    
+      <span class="glyphicon glyphicon-thumbs-up"></span> Like
+  
+<div id=Header><h1 align="center">Chilling Me Softly</h1>
  
-   button.onclick = function () {
+ <p align="center"><i>The Worlds #1 cake shop.</i></p>   </div>    <hr>
  
-     // Create a request object
-     var request = new XMLHttpRequest();
-     
-     // Capture the response and store it in a variable
-     request.onreadystatechange = function () {
-       if (request.readyState === XMLHttpRequest.DONE) {
-           // Take some action
-           if (request.status === 200) {
-               var counter = request.responseText;
-               var span = document.getElementById('count');
-               span.innerHTML = counter.toString();          
-           }
-       }  
-       // Not done yet
-     };
-     
-     // Make the request
-     request.open('GET', 'http://VoraPranay.imad.hasura-app.io/counter', true);
-     request.send(null);
+ <div id="Cakes"><p align="center"><strong>Cakes</strong></p>
+ <br>
+<table align="center" border="5">
+<tr>
+<td>Victoria</td>
+<td>Battenberg</td>
+<td>Chocolate</td>
+</tr>
+<tr>
+<td>£7.99</td>
+<td>£3.99</td>
+<td>£6.99</td>
+</tr>
+<tr>
+<td>Cheesecake</td>
+<td>Carrot</td>
+<td>Red Velvet</td>
+</tr>
+<tr>
+<td>£7.99</td>
+<td>£8.99</td>
+<td>£8.69</td>
+</tr>
+<tr>
+<td>Lemon Drizzle</td>
+<td>Vanilla Cupcake X4</td>
+<td>Chocolate Cupcake X4</td>
+</tr>
+<tr>
+<td>£9.69</td>
+<td>£6.99</td>
+<td>£6.99</td>
+</tr>
+</table>
+<p align="center"><small>Visit shop for more!</small></p></div>
+<hr>
+<br>
+<div id=ContactUs align="center"><img height=160 width=280 src=" http://www.yogiscakes.co.uk/img/chocolate-slice.png"/>  
+ <hr/>
+           <div class="footer">
+                   <button id="counter">  <span class="glyphicon glyphicon-thumbs-up"></span> Like </button>  <span id="count">0</span> times.
+                 <br/>
+                 <hr/>
+                 </div>
+<script type="text/javascript" src="/ui/main.js">
+         </script>
+<p align="center"><small><a href="3.html"><span>contact</span></a>    at   thecakeshop.net@gmail.com(Fake)</small></p></div>
 
-function loadLoginForm () {
-     var loginHtml = `
-         <h3>Login/Register to unlock awesome features</h3>
-         <input type="text" id="username" placeholder="username" />
-         <input type="password" id="password" />
-         <br/><br/>
-         <input type="submit" id="login_btn" value="Login" />
-         <input type="submit" id="register_btn" value="Register" />
-         `;
-     document.getElementById('login_area').innerHTML = loginHtml;
-     
-     // Submit username/password to login
-     var submit = document.getElementById('login_btn');
-     submit.onclick = function () {
-         // Create a request object
-         var request = new XMLHttpRequest();
-         
-         // Capture the response and store it in a variable
-         request.onreadystatechange = function () {
-            if (request.readyState === XMLHttpRequest.DONE) {
-                // Take some action
-                if (request.status === 200) {
- -                  alert('Logged in successfully');
-                    submit.value = 'Sucess!';
-                } else if (request.status === 403) {
- -                  alert('Username/password is incorrect');
-                  submit.value = 'Login';
-                  submit.value = 'Invalid credentials. Try again?';
-                } else if (request.status === 500) {
-                    alert('Something went wrong on the server');
-                    submit.value = 'Login';
-                } else {
- +                  alert('Something went wrong on the server');
-                    submit.value = 'Login';
-                }
-                loadLogin();
-           }  
-           // Not done yet
-         };
-         
-         // Make the request
-         var username = document.getElementById('username').value;
-         var password = document.getElementById('password').value;
-         console.log(username);
-         console.log(password);
-         request.open('POST', '/login', true);
-         request.setRequestHeader('Content-Type', 'application/json');
-         request.send(JSON.stringify({username: username, password: password}));  
-         submit.value = 'Logging in...';
-         
-     };
-     
-     var register = document.getElementById('register_btn');
-     register.onclick = function () {
-         // Create a request object
-         var request = new XMLHttpRequest();
-         
-         // Capture the response and store it in a variable
-         request.onreadystatechange = function () {
-           if (request.readyState === XMLHttpRequest.DONE) {
-               // Take some action
-               if (request.status === 200) {
-                   alert('User created successfully');
-                   register.value = 'Registered!';
-               } else {
-                   alert('Could not register the user');
-                   register.value = 'Register';
-               }
-           }
-         };
-         
-         // Make the request
-         var username = document.getElementById('username').value;
-         var password = document.getElementById('password').value;
-         console.log(username);
-         console.log(password);
-         request.open('POST', '/create-user', true);
-         request.setRequestHeader('Content-Type', 'application/json');
-         request.send(JSON.stringify({username: username, password: password}));  
-         register.value = 'Registering...';
-     
-     };
- }
- 
- function loadLoggedInUser (username) {
-     var loginArea = document.getElementById('login_area');
-     loginArea.innerHTML = `
-         <h3> Hi <i>${username}</i></h3>
-         <a href="/logout">Logout</a>
-     `;
- }
- 
- function loadLogin () {
-     // Check if the user is already logged in
-     var request = new XMLHttpRequest();
-     request.onreadystatechange = function () {
-         if (request.readyState === XMLHttpRequest.DONE) {
-             if (request.status === 200) {
-                 loadLoggedInUser(this.responseText);
-             } else {
-                 loadLoginForm();
-             }
-         }
-     };
-     
-     request.open('GET', '/check-login', true);
-     request.send(null);
- }
- 
- function loadArticles () {
-         // Check if the user is already logged in
-     var request = new XMLHttpRequest();
-     request.onreadystatechange = function () {
-         if (request.readyState === XMLHttpRequest.DONE) {
-             var articles = document.getElementById('articles');
-             if (request.status === 200) {
-                 var content = '<ul>';
-                 var articleData = JSON.parse(this.responseText);
-                 for (var i=0; i< articleData.length; i++) {
-                     content += `<li>
-                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
-                     (${articleData[i].date.split('T')[0]})</li>`;
-                 }
-                 content += "</ul>"
-                 articles.innerHTML = content;
-             } else {
-                 articles.innerHTML('Oops! Could not load all articles!')
-             }
-         }
-     };
-     
-     request.open('GET', '/get-articles', true);
-     request.send(null);
- }
- 
- 
- // The first thing to do is to check if the user is logged in!
- loadLogin();
- 
- // Now this is something that we could have directly done on the server-side using templating too!
- loadArticles();
+<div id=Copyright><p align="right"><small><small>Copyright&copy; TheCakeShop 2016(Fake)</small></small></p></div>
+
+</body>
+</html> 
