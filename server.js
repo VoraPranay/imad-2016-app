@@ -4,8 +4,8 @@ var express = require('express');
  var Pool = require('pg').Pool;
  
  var config = {
-     user: 'coco98',
-     database: 'coco98',
+     user: 'vorapranay,
+     database: 'vorapranay',
      host: 'db.imad.hasura-app.io',
      port: '5432',
      password: process.env.DB_PASSWORD
