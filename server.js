@@ -29,7 +29,7 @@ var express = require('express');
        date: 'Sep 10, 2016',
        content: `
            <p>
-               This is the content for my second article.<a href="ui/PROFILE.html">acb<a>
+               This is the content for my second article.<a href="ui/PROFILE.html">acb</a>
            </p>`
      },
      'article-three': {
