@@ -87,7 +87,9 @@ var express = require('express');
  app.get('/', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
  });
- 
+  app.get('/', function (req, res) {
+   res.sendFile(path.join(__dirname, 'ui', 'PROFILE.html'));
+ });
  
  
  var counter = 0;
