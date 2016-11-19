@@ -1,345 +1,329 @@
 <!DOCTYPE html>
 <html>
-<title>pranay profile</title>
-
+<title>Pranay Cake Shop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-pink.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<script type="text/javascript" src="http://beeker.io/lab/exit-intent-popup/bioep.min.js"></script>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+      bioEp.init({
+        html: '<div id="bio_ep_content">' +
+        '<img src="http://beeker.io/images/posts/2/tag.png" alt="Claim your discount!" />' +
+        '<span>HOLD ON!</span>' +
+        '<span>Click the button below to get a special discount</span>' +
+        '<span>This offer will NOT show again!</span>' +
+        '<a href="fireworks.html" class="bio_btn">CLAIM YOUR DISCOUNT</a>' +
+        '</div>',
+        css: '#bio_ep {width: 400px; height: 300px; color: #333; background-color: #fafafa; text-align: center;}' +
+        '#bio_ep_content {padding: 24px 0 0 0; font-family: "Titillium Web";}' +
+        '#bio_ep_content span:nth-child(2) {display: block; color: #f21b1b; font-size: 32px; font-weight: 600;}' +
+        '#bio_ep_content span:nth-child(3) {display: block; font-size: 16px;}' +
+        '#bio_ep_content span:nth-child(4) {display: block; margin: -5px 0 0 0; font-size: 16px; font-weight: 600;}' +
+        '.bio_btn {display: inline-block; margin: 18px 0 0 0; padding: 7px; color: #fff; font-size: 14px; font-weight: 600; background-color: #70bb39; border: 1px solid #47ad0b; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; text-decoration: none;}',
+        fonts: ['//fonts.googleapis.com/css?family=Titillium+Web:300,400,600'],
+        cookieExp: 0
+    });
+    </script>
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+ div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.border {   border-width: 5px;   border-color: rgba(255, 0, 0, 0.8);   border-style: solid; } 
+.bod { background-color:rgba(255, 0, 0, 0.2);}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+#counter{
+    background-color: #000000;
+    color: blue;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+.mySlides {display:none;}
+
 </style>
-<body class="w3-theme-l5">
+<body>
 
-<!-- Navbar -->
-<div class="w3-top">
- <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="home.html" class="w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>HOME</a></li>
-  <li class="w3-hide-small"><a href="http://ddinews.gov.in/" class="w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a></li>
-  <li class="w3-hide-small"><a href="fireworks.html" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
-  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a></li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="#" class="w3-padding-large w3-hover-white" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a>
-   
-  <li class="w3-hide-small w3-right"><a href="fireworks.html" class="w3-padding-large w3-hover-white" title="My Account"><img src="C:/Users/prashant/Desktop/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a></li>
- </ul>
-</div>
-
-
-
-<!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
-  <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card-2 w3-round w3-white">
-        <div class="w3-container">
-         <h4 class="w3-center">My Profile</h4>
-         <p class="w3-center"><img src="/Users/prashant/Desktop/ima.jpg"  class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-         <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Student ,TCET</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Mumbai</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> JUNE 04, 1998</p>
-		 <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i>ppvora131@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i>9969252162</p>
-        </div>
-      </div>
-      <br>
-      
-     
-     
-      <br>
-      
-      
-      
-      <!-- Interests -->
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p>Interests</p>
-          <p>
-            <span class="w3-tag w3-small w3-theme-d5">News</span>
-            
-            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
-            <span class="w3-tag w3-small w3-theme-d2">Games</span>
-            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
-            <span class="w3-tag w3-small w3-theme-l2">Food</span> 
-            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
-          </p>
-        </div>
-      </div>
-      <br>
-	  
-	  
-      
-     <!-- Accordion -->
-      <div class="w3-card-2 w3-round">
-        <div class="w3-accordion w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Blogs</button>
-          <div id="Demo1" class="w3-accordion-content w3-container">
-			
-          </div>
-          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Projects</button>
-          <div id="Demo2" class="w3-accordion-content w3-container" >
-            <p><div class="w3-content w3-display-container" target="-blank" style="max-width:800px">
-  <img class="mySlides" src="C:/Users/prashant/Desktop/IMG_20160930_150953.jpg" style="width:100%">
-  <img class="mySlides" src="C:/Users/prashant/Desktop/IMG_20161024_105552.jpg" style="width:100%">
-  <img class="mySlides" src="C:/Users/prashant/Desktop/New folder (2)/IMG_20160924_164740.jpg" style="width:100%">
-  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+<nav class="w3-sidenav w3-light-grey" style="width:50%">
+  <div class="w3-container w3-red">
+    <table>
+	<tr>
+	<td><h1><p style="font-size:70px">The Cake Shop</p></h1></td> <td>      </td>
+	<td><a class="w3-padding w3-pink w3-right" href="https://www.google.com"> <button onclick="myFunction()"><i class="fa fa-power-off" style="font-size:20px;color:Black" ></i>
+  </button></a></td>
+	</tr>
+	</table>
   </div>
+  
+<p>
+  
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://media.giphy.com/media/k754IRFqfiMi4/giphy.gif" style="width:100%">
+  <img class="mySlides" src="https://media.giphy.com/media/udA2Fe86iC1wc/giphy.gif" style="width:100%">
+  
+  <img class="mySlides" src=" http://www.yogiscakes.co.uk/img/chocolate-slice.png" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP3pTFpSyU5uuteKsAB84TRjWSt4jtsh_glinRSJIUA0h1mK5b" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX8I3yI_V3GrDE_r-usSwxgNUpUfg6vzIiI26t54_wnFWloqVRiw" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvnON3I1t-42MOrIDmjpJkwHlz-Jgbh6Bgpv2NFRcVg2o8VWwWeQ" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr3YM8WHx90aOSsktpzYsnkT0vAv5N_IDRzA_LRs6NXsyKAaEOw" style="width:100%">
+  
+  <div class="w3-content" style="width:100%">
+  <div class="mySlides w3-container w3-green" >
+    <h2><b> World's #1 Cake Shop</b></h2>
+    <h1><i>Visit Shop For More</i></h1>
+  </div>
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 </div>
-          </div>
-		  <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+		</p>
+		
+	<script>
+var myIndex = 0;
+carousel();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
-		  
-		  
-          <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Certificates</button>
-          <div id="Demo3" class="w3-accordion-content w3-container">
-         <div class="w3-row-padding">
-         <br>
-           <div class="w3-half">
-		   <h6>Embedded Workshop</h6>
-		    <a target="_blank"  href="C:/Users/prashant/Music/Downloads/20161114-181724_p0.jpg" > 
-             <img src="C:/Users/prashant/Music/Downloads/20161114-181724_p0.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           
-           <div class="w3-half">
-		   <h6> HTML COURSE </h6>
-             <a target="_blank"  href="C:/Users/prashant/Desktop/cert-1014-1412403 (1).jpg" > 
-			 <img src="C:/Users/prashant/Desktop/cert-1014-1412403 (1).jpg"   style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 ,rgba(0, 0, 0, 0.19)" class="w3-margin-bottom" >
-			</a>
-           </div>
-           
-		   
-		   
-         </div>
-          </div>
-        </div>
-      </div>
-      <br>
-    <!-- End Left Column -->
-    </div>
-    
-    <!-- Middle Column -->
-    <div class="w3-col m7">
-    
-      <div class="w3-row-padding">
-        <div class="w3-col m12">
-          <div class="w3-card-2 w3-round w3-white">
-            <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">WELCOME</h6>
-              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Proud</p>
-              <button type="button" class="w3-btn w3-theme"><i class="fa fa-pencil"></i>  Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-        <img src="C:/Users/prashant/Desktop/im.jpg"alt="im" class="w3-left w3-circle w3-margin-right" style="width:90px">
-        <h4>Pranay Vora</h4><br>
-        <hr class="w3-clear"/>
-        <h1>Thank You NPTEL & IMAD Team</h1>
-	  
-        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom" onclick="modify_qty(1)"><i class="fa fa-thumbs-up" ></i>  Like <input id="qty" value="0" /></button>
 		
-		<script>
-		function modify_qty(val) {
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
-    
-    if (new_qty < 0) {
-        new_qty = 0;
-    }
-    
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
-}
 		
-		</script>
 		
-        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
-      </div>
-	  
-	  <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-14"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-theme"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Mumbai University:Thakur College of Engineering And Technology</b></h5>
-          <h6 class="w3-text-theme"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-16</h6>
-          <p>Electronics & Telecommunication Engineering:First Year:8.33 CGPI</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>H.S.C.</b></h5>
-          <h6 class="w3-text-theme"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>D.G.RUPAREL COLLEGE: 82.77%</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>S.S.C.</b></h5>
-          <h6 class="w3-text-theme"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
-          <p>Aspee Nutan Vidya Mandir High School:94.00%</p><br>
-        </div>
-      </div>
-
-
-      
-    <!-- End Middle Column -->
-    </div>
-    
-    <!-- Right Column -->
-    <div class="w3-col m2">
-      <div class="w3-card-2 w3-round w3-white w3-center">
-        <div class="w3-container">
-           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-theme"></i>Skills</b></p>
-          <p>HTML  CSS</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:90%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>JAVA</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:80%">
-              <div class="w3-center w3-text-white">75%</div>
-            </div>
-          </div>
-          <p>C</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:75%">
-              <div class="w3-center w3-text-white">75%</div>
-            </div>
-          </div>
-          <p>Electronics</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:50%">
-              <div class="w3-center w3-text-white">85%</div>
-            </div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-theme"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:90%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:90%"></div>
-          </div>
-          <p>Gujarati</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-theme" style="width:95%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-      <div class="w3-card-2 w3-round w3-white w3-padding-12 w3-center w3-theme">
-      <p><i class="fa fa- w3-xxlarge"></i></p>
-	  <h4><a href="windows.html">Learning PROJECTS</a></h4>
-      </div>
-      
-      
-      <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
+		
+		
+		
+		
+  <a class="w3-red w3-padding" href="#">Home<span class="w3-tag w3-red w3-round w3-right"><span class="glyphicon glyphicon-chevron-right"></span > </span></a>
+  <a class="w3-padding w3-red" href="profile.html">Profile <span class="w3-tag w3-red w3-round w3-right"><span class="glyphicon glyphicon-chevron-right"></span></span></a>
+  <a class="w3-padding w3-red" href="blogs.html">Blogs<span class="w3-tag w3-red w3-round w3-right"><span class="glyphicon glyphicon-chevron-right"></span > </span></a>
   
-<!-- End Page Container -->
+  
+<script>
+function myFunction() {
+    var result = confirm("Do you really want to leave this page?");
+if (result == true) {
+    alert("Thanks for visiting");
+}
+else {
+    alert("Thanks for staying with us");
+}
+}
+</script>
+</nav>
+
+<div class="bod">
+<div style="margin-left:50%">
+
+<div class="w3-container" >
+
+  <h1>Chilling Me Softly ! 
+    <a href="order.html" class="btn btn-info btn-lg"> 
+	<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+        </a></h1>
+
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOK2cYW0xhsuparca1ici8UKcxFvceLlGchblWfv7oCXNyNb2wZQ">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOK2cYW0xhsuparca1ici8UKcxFvceLlGchblWfv7oCXNyNb2wZQ" alt="Fjords" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>Chocolate Beehive Rs690.99</span></button>
+</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyD71H-9OcSpR4UleCcyby-BWM3NVPomwrygN9FX0Y0ayVw6yT">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyD71H-9OcSpR4UleCcyby-BWM3NVPomwrygN9FX0Y0ayVw6yT" alt="Forest" width="300" height="300" class="border">
+  </a>
+  <div class="desc">
+<button class="button" style="vertical-align:middle"><span>Mug Cake </span></button>
+</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooBul4fbGklq_1Cuio-8V2sYpJd06GnIY9GscDedFXTngJkip">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooBul4fbGklq_1Cuio-8V2sYpJd06GnIY9GscDedFXTngJkip" alt="Northern Lights" width="300" height="200" class="border">
+  </a>
+  <div class="desc" class="border">
+<button class="button" style="vertical-align:middle"><span>  NEWDipped Cheesecake Trio
+Rs 1009.99 </span></button>
+</div>
+</div>
+<br>
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_m4uDwLGQ1CNBux1daTu-Pu-ZK4SteY6MNrw3xs4fjALoAnYsDg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_m4uDwLGQ1CNBux1daTu-Pu-ZK4SteY6MNrw3xs4fjALoAnYsDg" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>#00Heart </span></button>
+</div>
 </div>
 <br>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>Thanks To:<b>Sololearn,W3Schools,Github</b></h5>
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs-2PKT8MV8Q6ScqW754NVN_WcI1uBAj2jekL5A5ASoUY9DuvsDg">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs-2PKT8MV8Q6ScqW754NVN_WcI1uBAj2jekL5A5ASoUY9DuvsDg" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>children spl</span></button>
+</div>
+</div>
+<br>
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDAzehITnmREu5Uy_eE6LVX820AbZVlgkColo5R_JciPdzQHiC5g">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDAzehITnmREu5Uy_eE6LVX820AbZVlgkColo5R_JciPdzQHiC5g" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>delicious 01</span></button>
+</div>
+</div>
+<br>
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT__D5bfB_IF7DtbxNcnjnM-57A9YxLDYTvvAOOlTwDQMvscawcjw">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT__D5bfB_IF7DtbxNcnjnM-57A9YxLDYTvvAOOlTwDQMvscawcjw" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>#000000001</span></button>
+</div>
+</div>
+<br>
+
+<div class="img">
+  <a target="_blank" href="https://s-media-cache-ak0.pinimg.com/736x/31/67/b0/3167b05691bc1e9ebd42a230de195fc9.jpg">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/31/67/b0/3167b05691bc1e9ebd42a230de195fc9.jpg" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>#00 Rainbow</span></button>
+</div>
+</div>
+<br>
+
+<div class="img">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFb9heZfIUU6wRb7eVZKJII2OJUI-vyfl1SxfcDY2n7-TTvm_m">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFb9heZfIUU6wRb7eVZKJII2OJUI-vyfl1SxfcDY2n7-TTvm_m" alt="Mountains" width="300" height="200" class="border">
+  </a>
+  <div class="desc">
+  <button class="button" style="vertical-align:middle"><span>#000002</span></button>
+</div>
+</div>
+<br>
+
+
+
+</div>
+</div>
   
-</footer>
-
-<footer class="w3-container w3-theme-d5">
-  <p>Powered by <a href="http://www.vorabook.com" target="_blank">Vora Book House</a></p>
-</footer>
- <script>
-// Accordion
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme-d1";
-    } else {
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className =
-        x.previousElementSibling.className.replace(" w3-theme-d1", "");
-    }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+  <div style="margin-left:50%">
+ <div class="footer">
+                   <button id="counter">  <span class="glyphicon glyphicon-thumbs-up"></span> Like </button>  <span id="counter">0</span> times.
+                 <br/>
+                 <hr/>
+                 </div>
+				 
+			<script>	
+			
+  
+				 // Counter code
+ var button = document.getElementById('counter');
+ button.onclick = function () {
+ 
+     // Create a request object
+     var request = new XMLHttpRequest();
+     
+     // Capture the response and store it in a variable
+     request.onreadystatechange = function () {
+       if (request.readyState === XMLHttpRequest.DONE) {
+           // Take some action
+           if (request.status === 200) {
+               var counter = request.responseText;
+               var span = document.getElementById('counter');
+               span.innerHTML = counter.toString();          
+           }
+       }  
+       // Not done yet
+     };
+     
+    
 }
 </script>
+				 
+				 
 
+<div class="footer">
+<h4> Contact us on</h4>
+ <button id="counter">  <span class="glyphicon glyphicon-thumbs-up"></span> Like </button>  <span id="count">0</span> times.
+                 <br/>
+<p> <a href="https://www.google.com/gmail/"><span class="glyphicon glyphicon-envelope"></span>
+        </a>
+		 <a href="#">
+          <span class="glyphicon glyphicon-phone"></span>
+        </a>
+	<a href="#">	<i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+      </p>
+
+</div>  
+</div>
 
 </body>
 </html>
