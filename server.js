@@ -42,6 +42,13 @@ var express = require('express');
            </p>`
      }
  };
+var PROFILE = {
+     'PROFILE-one': {content:<div> <a href="ui/PROFILE.html"></a></div>}
+    
+}
+ 
+ 
+ 
  
  function createTemplate (data) {
      var title = data.title;
