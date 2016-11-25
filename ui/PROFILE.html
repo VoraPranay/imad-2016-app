@@ -58,7 +58,21 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       
       
       
-      
+         <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Projects</button>
+          <div id="Demo2" class="w3-accordion-content w3-container" >
+            <p><div class="w3-content w3-display-container" target="-blank" style="max-width:800px">
+  <img class="mySlides" src="C:/Users/prashant/Desktop/IMG_20160930_150953.jpg" style="width:100%">
+  <img class="mySlides" src="C:/Users/prashant/Desktop/IMG_20161024_105552.jpg" style="width:100%">
+  <img class="mySlides" src="C:/Users/prashant/Desktop/New folder (2)/IMG_20160924_164740.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div></p>
+          </div>
        <script>
 var slideIndex = 1;
 showDivs(slideIndex);
