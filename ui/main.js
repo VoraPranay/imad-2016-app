@@ -49,8 +49,8 @@
                     submit.value = 'Sucess!';
                 } else if (request.status === 403) {
  -                  alert('Username/password is incorrect');
- -                  submit.value = 'Login';
- +                  submit.value = 'Invalid credentials. Try again?';
+                  submit.value = 'Login';
+                  submit.value = 'Invalid credentials. Try again?';
                 } else if (request.status === 500) {
                     alert('Something went wrong on the server');
                     submit.value = 'Login';
