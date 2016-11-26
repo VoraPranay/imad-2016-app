@@ -3,6 +3,9 @@ body {
     margin-top: 60px;
 
     background-color: lightblue;
+     border-style: solid;
+    border-color: red;
+
 
 
 }
