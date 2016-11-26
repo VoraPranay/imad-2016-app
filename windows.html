@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>By Fronz-Tec</title>
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+html{
+    width: 122%;
+    background: #004050;
+}
+.wrap,.wrap2{
+    width: 830px;
+    height: auto;
+    margin: 70px 100px;
+    float: left;
+}
+.wrap2{
+    width: 410px !important;
+}
+div[class^="metro"]{
+    float: left;
+    margin: 0 10px 10px 0;
+    height: 95px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease;
+  user-drag: element;
+  border: solid 2px transparent;
+}
+div[class^="metro"]:hover{
+    border: solid 2px mintcream;
+}
+div[class^="metro"]:active{
+    transform: scale(.98,.98);
+}
+.metro-big{width: 200px;}
+.metro-small{width: 95px;}
+.last{margin-right: 0 !important;}
+.Start{
+    color: white;
+    font: normal 50px 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 50px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  transition: all .3s ease;
+}
+.Start:hover{
+  text-shadow: 0 0 4px white;
+}
+.space{
+    margin-bottom: 110px;
+}
+.label{
+    position: absolute;
+    color: white;
+    font: 500 12px sans-serif;
+    left: 10px;
+  user-select: none;
+}
+.bottom{bottom: 5px;}
+.top{top: 5px;}
+.chat{background: #df0024;}
+.calendar{
+  background: #00a9ec;
+}
+.store{background: #ff9000;}
+.ie{background: #00abdc;}
+.people{background: #0e5d30;}
+.video{background: #8b0189;}
+.chrome{background: #ce4e4e;}
+.photo{
+  background: url('http://lorempixel.com/200/95/people');
+  background-position: -2px -2px;
+}
+.music{
+  background: #5f5f5f;
+  animation: flip 6s linear infinite;
+  transform: rotateX(0deg);
+}
+.games{background: #00ff00;}
+.twitter{background: #19bfe5;}
+.gp{background: #d64136;}
+.fb{background: #3b5998;}
+.cnn{background: #fe0000;}
+.ps{background: #0c5fa1;}
+.bt{background: #2546e9;}
+.cc{background: #d20808;}
+.wmp{background: #f68935;}
+.tube{background: #c8312b;}
+.skype{background: #10bef2;}
+
+div[class^="icon"]{
+    width: 45px;
+    height: 45px;
+    margin: 20px auto;
+    background-size: 45px 45px;
+}
+.icon-calendar{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Apps-Calendar-Metro-icon.png');}
+.icon-chat{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Other-Mail-alt-Metro-icon.png');}
+.icon-store{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-Microsoft-Store-Metro-icon.png');}
+.icon-ie{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-Browsers-Internet-Explorer-10-Metro-icon.png');}
+.icon-people{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Folders-OS-User-No-Frame-Metro-icon.png');}
+.icon-video{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Folders-OS-My-Videos-Metro-icon.png');}
+.icon-chrome{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-Browsers-Google-Chrome-Metro-icon.png');}
+.icon-music{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Apps-Google-Music-Metro-icon.png');}
+.icon-games{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Folders-OS-Games-alt-Metro-icon.png');}
+.icon-twitter{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-Twitter-alt-2-Metro-icon.png');}
+.icon-gp{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-Google-plus-Metro-icon.png');}
+.icon-fb{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-Facebook-alt-1-Metro-icon.png');}
+.icon-cnn{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-CNN-Metro-icon.png');}
+.icon-ps{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Apps-Adobe-Photoshop-Metro-icon.png');}
+.icon-bt{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Apps-Bluetooth-Metro-icon.png');}
+.icon-cc{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Apps-CCleaner-Metro-icon.png');}
+.icon-wmp{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Apps-Windows-Media-Player-Metro-icon.png');}
+.icon-tube{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-YouTube-alt-1-Metro-icon.png');}
+.icon-skype{background: url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Apps-Skype-Metro-icon.png');}
+::-webkit-scrollbar{
+  width: 10px;
+    height: 10px;
+    cursor: pointer;    
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px 2px rgba(0,0,0,0.3);
+    background: #007491;
+}
+::-webkit-scrollbar-thumb {
+    background: #002f3b; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+::selection{
+    background: mintcream; 
+}
+
+@keyframes flip{
+  0%{
+    transform: rotateX(0deg);
+  }
+  15%{
+    transform: rotateX(360deg);  
+  }
+  100%{
+    transform: rotateX(360deg); 
+  }
+}
+
+.photo img{
+  top: -4px;
+  left: -4px;
+  position: absolute;
+  opacity: 0;
+  animation: fade 8s ease-in-out infinite 8s;
+  z-index: 0;
+  border: solid 2px transparent;
+  transition: all .3s ease;
+}
+
+.photo img:hover{
+  border: solid 2px mintcream;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0; 
+  }
+  10%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+.footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+</style>  
+  </head>
+    <body>
+        <div class="wrap">
+    <h1 class="Start">Start</h1>
+      <div class="metro-big chat">
+            <div class="icon-chat"></div>
+            <span class="label bottom">Mail</span>
+        </div>
+        <div class="metro-big calendar">
+            <div class="icon-calendar"></div>
+            <span class="label bottom">Calendar</span>
+        </div>
+        <div class="metro-small store">
+            <div class="icon-store"></div>
+            <span class="label bottom">Store</span>
+        </div>
+        <div class="metro-big ie">
+            <div class="icon-ie"></div>
+            <span class="label bottom">Internet Explorer</span>
+        </div>
+        <div class="metro-small people last">
+            <div class="icon-people"></div>
+            <span class="label bottom">People</span>
+        </div>
+        <div class="metro-small chrome">
+            <div class="icon-chrome"></div>
+            <span class="label bottom">Chrome</span>
+        </div>
+        <div class="metro-big photo">
+      <img src="http://lorempixel.com/200/95/animals" class="img-delay-1" />
+            <span class="label bottom">Photos</span>
+        </div>
+        <div class="metro-big video">
+            <div class="icon-video"></div>
+            <span class="label bottom">Videos</span>
+        </div>
+        <div class="metro-big music">
+            <div class="icon-music"></div>
+            <span class="label bottom">Musics</span>
+        </div>
+        <div class="metro-small games last">
+            <div class="icon-games"></div>
+            <span class="label bottom">Games</span>
+        </div>
+        <div class="metro-small twitter">
+            <div class="icon-twitter"></div>
+            <span class="label bottom">twitter</span>
+        </div>
+        <div class="metro-small gp">
+            <div class="icon-gp"></div>
+            <span class="label bottom">Google+</span>
+        </div>
+        <div class="metro-small fb">
+            <div class="icon-fb"></div>
+            <span class="label bottom">Facebook</span>
+        </div>
+        <div class="metro-small cnn">
+            <div class="icon-cnn"></div>
+            <span class="label bottom">CNN</span>
+        </div>
+        <div class="metro-big ps">
+            <div class="icon-ps"></div>
+            <span class="label bottom">Adobe Photoshop</span>
+        </div>
+    </div>
+
+    <div class="wrap2">
+        <div class="space"></div>
+        <div class="metro-small bt">
+            <div class="icon-bt"></div>
+            <span class="label bottom">Bluetooth</span>
+        </div>
+        <div class="metro-small cc">
+            <div class="icon-cc"></div>
+            <span class="label bottom">CCleaner</span>
+        </div>
+        <div class="metro-big wmp last">
+            <div class="icon-wmp"></div>
+            <span class="label bottom">Windows Media Player</span>
+        </div>
+        <div class="metro-small tube">
+            <div class="icon-tube"></div>
+            <span class="label bottom">Youtube</span>
+        </div>
+        <div class="metro-big skype">
+            <div class="icon-skype"></div>
+            <span class="label bottom">Skype</span>
+        </div>
+    </div>
+	<div class="footer">
+<h3>  Thanks to:Sololearn</h3>
+</div>
+    </body>
+</html>
