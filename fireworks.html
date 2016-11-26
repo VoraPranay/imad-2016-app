@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fireworks</title>
+
+<style>
+	body{
+  background:#000;
+  margin:0;
+  width:100%;
+  overflow:hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+#body{
+   background: orange;
+   transition: background 5s linear; 
+}
+.loading-icon {
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+  padding: 25px 35px 35px;
+  box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.07);
+}
+.loading-icon p {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-family: futura, sans-serif;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: orangered;
+  border-radius: 50%;
+  margin: 10px;
+          animation-name: scaleUp;
+          animation-duration: 1s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+}
+
+.dot:nth-of-type(1n) {
+          animation-delay: 0.1s;
+}
+
+.dot:nth-of-type(2n) {
+          animation-delay: 0.2s;
+}
+
+.dot:nth-of-type(3n) {
+          animation-delay: 0.3s;
+}
+
+.dot:nth-of-type(4n) {
+          animation-delay: 0.4s;
+}
+
+.dot:nth-of-type(5n) {
+          animation-delay: 0.5s;
+}
+
+.dot:nth-of-type(6n) {
+          animation-delay: 0.6s;
+}
+
+.dot:nth-of-type(7n) {
+          animation-delay: 0.7s;
+}
+@-webkit-keyframes scaleUp {
+  0% {
+            transform: scale(1);
+  }
+  50% {
+            transform: scale(3);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+            transform: scale(1);
+  }
+  50% {
+            transform: scale(3);
+  }
+  100% {
+            transform: scale(1);
+  }
+  
+}
+#text{
+   display:none; 
+   color:white;
+   font-size:15px;
+}
+#btn{
+    display:none;
+    height: 50px;
+    width: 120px;
+    border:none;
+   padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+#btn:hover {background-color: #3e8e41;}
+
+#btn:active {display:none;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+
+<body id="body">
+<all id="all">
+<div class="loading-icon">
+  <p>Loading...<num id="num">0</num>%</p>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+</all>
+<center>
+<text id="text">Haha you just wasted <sec id="sec">0</sec> seconds <br /><div><a target="_blank" href="http://cutewallpaper.org/wp-content/uploads/2016/03/Happy-Birthday-Wallpaper-HD-1920x1080-2.jpg">
+    <img src="http://cutewallpaper.org/wp-content/uploads/2016/03/Happy-Birthday-Wallpaper-HD-1920x1080-2.jpg" alt="Fjords" width="600" height="300" class="border">
+  </a></div>
+Thank you for checking out my app<br />Please like if you enjoyed<br /><br /><br /><br /><p>:Made by Pranay Vora:</p><br /><br /><br /><sur id="sur"><h3>Wait for a surprise</h3> </sur><button id="btn" onclick="rerun()">click me!</button> </text><br>
+
+
+</center>
+    <canvas></canvas>
+
+    <script>
+	var numm = 1;
+var nnum = 1;
+
+function time(){
+   var sec = document.getElementById("sec");
+   sec.innerHTML = nnum;
+   nnum++;
+   if(nnum == 19){
+      document.getElementById("btn").style = "display: inline-block;";
+document.getElementById("sur").innerHTML = "here it is!";
+   }
+}
+function change(){
+   var num = document.getElementById("num");
+   if(numm <= 100){
+   num.innerHTML = numm;
+   numm++;
+   }else{
+      document.getElementById("all").style = "display:none;";
+
+document.getElementById("text").style = "display:inline-block;";
+ document.getElementById("body").style.background = "#ff9999";
+ 
+setTimeout(function(){
+document.getElementById("body").style.background = "#9999ff";}, 5000);
+}};
+setInterval(time, 1000);
+setInterval(change, 100);
+function rerun(){
+
+    
+
+    
+        var t = 0;
+        var c = document.querySelector("canvas");     
+        var $ = c.getContext('2d');
+        c.width = window.innerWidth;
+        c.height = window.innerHeight;
+        $.fillStyle = 'hsla(0,0%,0%,1)';
+
+        window.addEventListener('resize', function() {
+          c.width = window.innerWidth;
+          c.height = window.innerHeight;
+        }, false);
+
+        function draw() {
+          $.globalCompositeOperation = 'source-over';
+          $.fillStyle = 'hsla(0,0%,0%,.1)';
+          $.fillRect(0, 0, c.width, c.height);
+          var foo, i, j, r;
+          foo = Math.sin(t) * 2 * Math.PI;
+          for (i=0; i<400; ++i) {
+            r = 400 * Math.sin(i * foo);
+            $.globalCompositeOperation = '';
+            $.fillStyle = 'hsla(' + i + 12 + ',100%, 60%,1)';
+            $.beginPath();
+            $.arc(Math.sin(i) * r + (c.width / 2), 
+                  Math.cos(i) * r + (c.height / 2), 
+                  1.5, 0, Math.PI * 2);
+            $.fill();
+
+          }
+          t += 0.000005;
+          return t %= 2 * Math.PI;
+
+        };
+
+        function run() {
+          window.requestAnimationFrame(run);
+          draw();
+        }
+        run();
+		}
+    </script>
+</body>
+</html>
