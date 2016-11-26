@@ -608,7 +608,7 @@ _________________________________________________________ -->
                         </div>
                        
                     </div>
-
+</div>
                 </div>
                 <!-- /.col-md-3 -->
             </div>
@@ -624,7 +624,33 @@ _________________________________________________________ -->
          <div class="footer">
                 This button <button id="counter">Click me!</button> has been clicked <span id="counter">0</span> times.
             </div>
-        <script type="text/javascript" src="/ui/main.js">
+        <script>
+       //counter code     
+        var button = document.getElementById('counter');
+
+button.onclick = function () {
+
+    // Create a request object
+    var request = new XMLHttpRequest();
+    
+    // Capture the response and store it in a variable
+    request.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) {
+          // Take some action
+          if (request.status === 200) {
+              var counter = request.responseText;
+              var span = document.getElementById('counter');
+              span.innerHTML = counter.toString();          
+          }
+      }  
+      // Not done yet
+    };
+    
+    // Make the request
+    request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
+    request.send(null);
+};
+     
         </script>
 
         <div id="copyright">
@@ -635,9 +661,7 @@ _________________________________________________________ -->
                     
                          <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
                     </p>
-             <p class="footer">
-                This button <button id="counter">Click me!</button> has been clicked <span id="counter">0</span> times.
-            </p>
+             
                 </div>
             </div>
         </div>
