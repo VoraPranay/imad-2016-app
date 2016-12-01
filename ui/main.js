@@ -20,13 +20,13 @@ button.onclick = function () {
     };
     
     // Make the request
-    request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
+    request.open('GET', 'http://vorapranay.imad.hasura-app.io/counter', true);
     request.send(null);
 };
      
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
+        <h2>Login/Register to unlock awesome features</h2>
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
         <br/><br/>
